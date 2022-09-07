@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://www.webconia.de/wp-content/uploads/2020/03/webconia_logo.svg" width="400"></a></p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+ 
 
-### `npm start`
+## About The task (Coding Challenge)
+- Backend repo <a href="https://github.com/ashraf-alsamman/webconia-backend">https://github.com/ashraf-alsamman/webconia-backend</a> 
+- Back-end (PHP Laravel, MySQL, Docker).
+- Frontend (React js, Redux, Redux Toolkit).
+- WebSocket for real-time update (Pusher).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Demo
+- You can check the live demo from here [fronend link]
+- Postman collection <a href="https://www.postman.com/ashraf-alsamman/workspace/a5d22c07-2317-430e-b7a6-51e2bafc3251/request/733051-02383877-4929-463b-b268-444ce168b707">Postman Collection</a> 
+You can update the visitors counter by hitting api with published API with the postman and update the JSON object and you will see immediately the update on front end part.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ <img src='https://i.postimg.cc/3xjbPxK3/webconia.png' border='0' alt='webconia'/> 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Example JSON Request
+```
+[
+    {
+      "title":"Collerys",  
+      "AnmeldungenHeute":"12",
+      "WebsiteBesucherHeute":"230",
+      "users":[
+         {
+            "name":"Emma",
+            "surname":"Thomas"
+         }
+      ]
+   },
+      {
+      "title":"Duftz",  
+      "AnmeldungenHeute":"122",
+      "WebsiteBesucherHeute":"201",
+      "users":[
+         {
+            "name":"Sophia",
+            "surname":"Joseph"
+         }
+      ]
+   },
+      {
+      "title":"Belegbote", 
+      "AnmeldungenHeute":"302",
+      "WebsiteBesucherHeute":"4001",
+      "users":[
+         {
+            "name":"Isabella",
+            "surname":"Joseph"
+         },
+         {
+            "name":"Mia",
+            "surname":"Ezekiel"
+         }
+      ]
+   },
+      {
+      "title":"Greetix", 
+      "AnmeldungenHeute":"987",
+      "WebsiteBesucherHeute":"774",
+      "users":[
+         {
+            "name":"Nora",
+            "surname":"Ezekiel"
+         }
+      ]
+   }
+   ]
+```
 
-### `npm run build`
+## Example Header Request
+- signature_header_name `Signature`
+- signing_secret `ashraf`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tools
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **[Laravel](https://laravel.com/)**
+- **[Docker](https://www.docker.com/)**
+- **[Nodejs](https://nodejs.org/en/)**
+- **[Pusher](https://pusher.com/)**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **[ReactJs](https://reactjs.org/)**
+- **[Redux](https://redux.js.org/)**
+- **[Redux-toolkit](https://redux-toolkit.js.org/)**
 
-### `npm run eject`
+  
+# Steps
+## Example Header Request
+- signature_header_name `Signature`
+- signing_secret `ashraf`
+- open postman and hit the link [localhost/webhook/create]
+   and you can update the data (body of the request like a demo) and check the frontend part
+  
+### Frontend
+- `git clone https://github.com/ashraf-alsamman/webconia-frontend`
+- Edit config/confige.js api  
+- Run frontend (react js) project
+  `yarn install`
+  `yarn start`
+  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Try localhost/webhook/create
+and change data in json object and check frontend part
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ 
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 
