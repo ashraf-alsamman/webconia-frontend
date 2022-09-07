@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="container">
       <ToastContainer />
-      <div className="row" style={{ padding: '0 150px  0 150px' }}>
+      <div className="row">
 
         {
           state.status === 'succeeded' &&
